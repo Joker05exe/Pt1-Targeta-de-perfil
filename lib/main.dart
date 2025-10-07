@@ -13,7 +13,6 @@ class Pt1_deltio_Joan extends StatelessWidget {
       debugShowCheckedModeBanner: false, // Elimina la flag de depuració
       title: 'Perfil',
       theme: ThemeData(
-        primarySwatch: const Color.fromARGB(255, 243, 3, 3),
       ),
       home: const PerfilScreen(),
     );
@@ -27,7 +26,9 @@ class PerfilScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Joan Del Tio Barberà'),
+        title: const Text('HULK'),
+        backgroundColor: Colors.greenAccent,
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
@@ -43,7 +44,7 @@ class PerfilScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             const Text(
-              'Enviali un missatge a HULK',
+              'Envia-li un missatge a HULK',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
